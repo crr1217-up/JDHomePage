@@ -1,0 +1,227 @@
+.shortcut a {
+	color: #999;
+}
+.shortcut a:hover {
+	color: #f10215;
+}
+.shortcut {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  background-color: #e3e4e5;
+}
+/* .content{
+	
+} */
+.position {
+  float: left;
+  position: relative;
+}
+
+.position .menu,
+.option li .icon {
+  position: relative;
+  z-index: 10;
+}
+.position .menu {
+  line-height: 28px;
+}
+.option {
+  float: right;
+}
+.option li {
+  float: left;
+  position: relative;
+}
+.option li .menu,
+.position .menu {
+  padding: 0 7px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+/* .option li .icon{
+	
+} */
+
+.option li:hover .icon,
+.position:hover .menu {
+  background-color: #fff;
+  border-top-color: #ccc; /*悬浮上去菜单区的上左右边界变色显示出来*/
+  border-left-color: #ccc;
+  border-right-color: #ccc;
+}
+.option li:hover .dropdown {
+  display: block;
+}
+.option li .menu .out {
+  display: inline-block;
+  line-height: 6px;
+  height: 6px;
+  overflow: hidden;
+}
+.option li i {
+  font-size: 10px;
+  /* position: absolute;
+    right: 5px;
+    top: 10px; */
+  display: block; /*设置成inline-block不行，必须设置成block*/
+  margin-top: -6px;
+  color: #999;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  cursor: pointer;
+}
+.option .line {
+  width: 1px;
+  height: 10px;
+  margin: 11px 5px 0;
+  background-color: #ccc;
+  float: left;
+}
+.dropdown {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  z-index:9;
+}
+.position:hover .dropdown {
+  display: block;
+}
+
+.option .dropdown dt {
+  font-weight: bold;
+  color: #666;
+}
+.position .dropdown {
+  padding: 10px;
+}
+
+.position .dropdown dl {
+  width: 300px;
+}
+.shortcut dl {
+  overflow: hidden;
+  border-bottom: 1px dotted #eee;
+}
+.position .dropdown dd {
+  float: left;
+  width: 60px;
+}
+.dropdown dt,
+.dropdown dd {
+  white-space: nowrap;
+}
+.dropdown dd {
+  float: left;
+  padding: 2px 0px;
+}
+.position .dropdown dd a {
+  padding: 0 8px;
+}
+.option .myjd.dropdown dl {
+  width: 265px;
+  padding: 10px 0 10px 15px;
+}
+.option .myjd.dropdown dd {
+  width: 126px;
+}
+.option .buy.dropdown dl {
+  width: 140px;
+  padding: 10px 0 10px 8px;
+}
+.option .buy.dropdown dd {
+  width: 56px;
+}
+.option .sevice.dropdown {
+  left: -93px;
+  padding: 10px 0;
+}
+.option .sevice.dropdown dl {
+  width: 177px;
+}
+.option .sevice.dropdown dt {
+  padding-left: 15px;
+}
+.option .sevice.dropdown dd {
+  width: 70px;
+  padding-left: 15px;
+}
+.option .web-nav.dropdown {
+  overflow: hidden;
+  right: -84px;
+  left: -1029px;
+  width: 1190px;
+  padding: 15px 0;
+}
+.option .web-nav.dropdown dl {
+  width: 340px;
+  padding-left: 20px;
+  float: left;
+  border-bottom: 0;
+  border-right: 1px dotted #eee;
+}
+.option .web-nav.dropdown .dl1 {
+  width: 340px;
+}
+.option .web-nav.dropdown .dl2 {
+  width: 255px;
+}
+.option .web-nav.dropdown .dl3 {
+  width: 255px;
+}
+.option .web-nav.dropdown .dl4 {
+  width: 255px;
+}
+.option .web-nav dd {
+  width: 85px;
+}
+a.active {
+  background-color: #f10215;
+  color: #fff;
+}
+.mobile::before {
+  /*当鼠标悬浮上菜单项时，下方出现的三角*/
+  /* border-color: transparent transparent #fff; */
+  left: 144px;
+  content: "";
+  position: absolute;
+  display: block;
+  top: -9px;
+  /* margin-left: -5px; */
+  /*  width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0; */
+  border: 5px solid transparent;
+  border-bottom-color: #fff;
+}
+.option .mobile.dropdown {
+  width: 190px;
+  left: -118px;
+  padding: 15px 0;
+}
+.option .mobile.dropdown .img {
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  width: 74px;
+  height: 74px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+.option .mobile.dropdown img {
+  width: 70px;
+  height: 70px;
+  margin: 2px 0 0 2px;
+}
+.option .mobile.dropdown .info {
+  margin: 0 10px 0 86px;
+  min-height: 70px;
+}
+.mobile-jd {
+  color: #999;
+}

@@ -1,0 +1,98 @@
+
+.all-menu{
+    padding:10px 0;
+    padding-left: 18px;
+}
+.menu-item{ 
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #333;
+}
+.menu-item a{
+    white-space: nowrap;
+}
+.menu-info{
+    position:absolute;
+    width:800px;
+    height:480px;
+    left:192px;
+    top:0;
+    background-color: #fff;
+    padding: 20px 0 10px 20px;
+    display:none;
+    z-index: 4;
+}
+.tabs{
+    height:24px;
+    width:100%;
+}
+.tabs::after{
+    display: block;
+    content:'';
+    clear: both;
+}
+.tabs li{
+    float:left;
+    height:24px;
+}
+.tabs li .tab{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 24px;
+    background-color: #333;
+    line-height: 24px;
+    color: #fff;
+}
+.tabs li .tab:hover{
+    background-color: #c81623;
+    color: #fff;
+}
+.tab-items{
+    padding-top:10px;
+   
+   
+}
+.tab-items dl{
+     position:relative;
+     line-height: normal;
+    
+}
+.tab-items .item-title{
+    position: absolute;
+    left:0;
+    top:8px;
+    font-size:12px;
+    width: 70px;
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab-items .item-title:hover{
+    color: #c81623;
+}
+.tab-items .tab-item{
+    margin-left:77px;
+    line-height: 0;
+    padding: 5px 0;
+}
+.tab-items .tab-item a{
+    display:inline-block;
+    color: #666;
+    margin: 3px 0;
+    padding: 0 6px;
+    height: 16px;
+    font-size:12px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.tab-items .tab-item a:hover{
+    color: #c81623;
+}
+.ac{
+    background-color: #d9d9d9;
+}
+    
